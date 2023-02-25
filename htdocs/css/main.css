@@ -166,6 +166,22 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   transition: all 0.3s ease-in-out;
   display: inline-block;
 }
+.btn1 {
+  font-size: 14px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
 
 .btn:focus,
 .btn:active {
@@ -589,7 +605,21 @@ button:focus {
 .menu-bg .navbar-nav .active {
   color: #288031!important;
 }
+#removee {
+  border-width:0px;
+border:none;
+}
+.cont {
+  padding-bottom: 110px;
+}
+.image-404 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 
+  padding-bottom: 50px;
+}
 .navbar-expand-md .navbar-nav .nav-link {
   color: #9cffae;
   font-size: 15px;
@@ -814,7 +844,24 @@ padding: 10px;
   padding-top: 120px;
   margin: auto;
 }
+.tae{
+  padding-bottom: 70px;
+}
+.pract2-1 {
+  
+  padding-top: 20px;
+  margin: auto;
+}
 .pract2 h1 {
+  color: #63abb9;
+  font-size: 120%;
+  font-weight: 50;
+
+}
+.pract {
+  padding-top: 20px;
+}
+.pract h1 {
   color: #63abb9;
   font-size: 120%;
   font-weight: 50;

@@ -69,39 +69,83 @@
     <!-- Header Section End --> 
  
     <div class="container">      
-        <div class="pract2">
-            <div class="section-header">   
-              <p class="btn btn-subtitle wow fadeInDown animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">&lt;Activity&gt;</p>       
-              <h2 class="wow colorh2 fadeInDown">Practical Activity 2</h3>
-              <h1>This is the space where the links for the practical activity will go.</h1>
-            </div>
+        <div class="pract2 cont">
+          <div class="header-button">
+            <a href="../../index.html" class="btn btn-border-filled">« Home</a>
+            <a href="../pa2/index.html" class="btn page-scroll btn-border-nfilled" >« Back to PA2</a>
+          </div>
           <img>
         </div>
-
     </div>  
-    
-    <div class="row pra2row">
-      <div class="col-lg-4 col-md-12 col-xs-12 fttbl tbl">
-          <h2 class = "wow colorh2 fadeInDown" data-wow-delay="0.2s">&lt;Tables&gt;</h2>
-          <p class = "pad1">This link takes you to the tables page using bootstrap.</p>
-          <p><a class="btn  btn-border-nfilled" href="./tables.html" role="button">Open Tables Page »</a></p>
-      </div>
-      <div class="col-lg-4 col-md-12 col-xs-12  sntbl tbl">
-        <h2 class = "wow colorh2 fadeInDown" data-wow-delay="0.2s">&lt;Forms&gt;</h2>
-        <p class = "pad1">This link takes you to the forms page using bootstrap.</p>
-          <p><a class="btn btn-border-nfilled" href="./forms.html" role="button">Open Forms Page»</a></p>
-      </div>
-      <div class="col-lg-4 col-md-12 col-xs-12 tbl">
-        <h2 class = "wow  colorh2 fadeInDown" data-wow-delay="0.2s">&lt;Redirects&gt;</h2>
-          <p class = "pad1">These links will take you to the redirect using bootstrap.</p>
-          <p><a class="btn btn-border-nfilled mb-2" href="./404.html" role="button"><i class="lni lni-hand"></i> 404 »</a></p>
-          <p><a class="btn btn-border-filled mb-2" href="./hello.html" role="button">Page Not Found Link »</a></p>
-          <p><a class="btn btn-border-nfilled mb-2" href="./403.html" role="button"><i class="lni lni-warning"></i> 403 »</a></p>
-          <p><a class="btn  btn-border-filled mb-2" href="./forbidden.html" role="button">Forbidden Link »</a></p>
-      </div>
-  </div>
-        
-      
+        <!-- Contact Section Start -->
+        <section id="contact">      
+          <div class="contact-form">
+            <div class="container">
+              <div class="row justify-content-center"> 
+                <div class="offset-top">
+                  <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="contact-block wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="section-header Cinfo">   
+                        <p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">&lt;Sign Up Form&gt;</p>       
+                        <h2 class="section-title"> Fill the form to sign up.</h2>
+                        <a href="#home">This is the page used to demonstrate forms</a>
+                      </div>
+                      <form id="contactForm">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required data-error="Please enter your first name">
+                              <div class="help-block with-errors"></div>
+                            </div>                                 
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input type="text" placeholder="Last Name" id="lname" class="form-control" name="lname" required data-error="Please enter your last email">
+                              <div class="help-block with-errors"></div>
+                            </div> 
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your email">
+                              <div class="help-block with-errors"></div>
+                            </div>                                 
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input type="text" placeholder="Phone Number" id="Phnbr" class="form-control" name="Phnbr" required data-error="Please enter your phone number">
+                              <div class="help-block with-errors"></div>
+                            </div> 
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="password" name="password" placeholder="Password" required data-error="Please enter your password">
+                              <div class="help-block with-errors"></div>
+                            </div>                                 
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <input type="text" placeholder="Confirm" id="confirm" class="form-control" name="confirm" required data-error="Please confirm your password">
+                              <div class="help-block with-errors"></div>
+                            </div> 
+                          </div>
+                          <div class="col-md-12">
+                            <div class="submit-button">
+                              <button class="btn btn-common btn-color btn-effect" id="submit" type="submit">Sign Up</button>
+                              <div id="msgSubmit" class="h3 hidden"></div> 
+                              <div class="clearfix"></div> 
+                            </div>
+                          </div>
+                        </div>            
+                      </form>
+                    </div>
+                   
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>        
+        </section>
+        <!-- Contact Section End -->
 
      <!-- Footer Section Start -->
      <footer>
@@ -193,8 +237,10 @@
       <div class="loader" id="loader-1"></div>
     </div>
     <!-- End Preloader -->
-
+  
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="../../js/jquery-min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
@@ -212,6 +258,6 @@
     <script src="../../js/contact-form-script.js"></script>   
     <script src="../../js/main.js"></script>
     <script src="../../js/main 2.js"></script>
-    
+  
   </body>
 </html>

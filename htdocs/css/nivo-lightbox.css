@@ -26,6 +26,9 @@
 	visibility: visible;
 	opacity: 1;
 }
+.unbut {
+	padding-top: 30px;
+}
 .nivo-lightbox-wrap  {
 	position: absolute;
 	top: 10%;
